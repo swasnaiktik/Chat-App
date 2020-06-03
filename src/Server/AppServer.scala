@@ -16,6 +16,7 @@ class AppServer extends Actor {
   val config: Configuration = new Configuration{
     setHostname("localHost")
     setPort(8080)
+
   }
 
   val server: SocketIOServer = new SocketIOServer(config)
